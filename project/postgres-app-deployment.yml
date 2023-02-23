@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+   name: postgres-app-deployment
+   labels: 
+      type: postgres-app
+spec: 
+   selector: 
+      matchLabels: 
+         type: postgres-app
+   template: 
+      metadata:
+         name: postgres-app-pod
+         labels: 
+            type: postgres-app
+      spec: 
+         containers: 
+            - name: mydb
+              image: postgres
+              env: 
+                 - name: POSTGRES_PASSWORD
+                   value: mvbrothers
+                 - name: POSTGRES_USER
+                   value: myuser
+                 - name:  POSTGRES_DB
+                   value: mydb
+---
+apiVersion: v1
+kind: Service
+metadata: 
+   name: postgres-app-service
+   labels: 
+      type: postgres-app
+spec: 
+   selector:
+      type: postgres-app
+   ports: 
+      - targetPort: 5432
+        port: 5432
+...
+

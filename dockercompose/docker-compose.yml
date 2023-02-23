@@ -1,0 +1,30 @@
+---
+version: '3'
+services: 
+   myvotingapp:
+      image: dockersamples/examplevotingapp_vote
+      ports: 
+         - 5050:80
+      deploy: 
+         replicas: 2
+   myredis: 
+      image: redis
+      ports: 
+         - 6380:6380
+   workerapp: 
+      image: dockersamples/examplevotingapp_worker
+   mypostgres:
+      image: postgres
+      ports: 
+         - 5432:5432
+      environment: 
+         POSTGRES_PASSWORD: mvbrothers
+         POSTGRES_USER: myuser
+         POSTGRES_DB: mydb
+   myresultapp: 
+      image: dockersamples/examplevotingapp_result
+      ports: 
+         - 6060:80
+      deploy: 
+         replicas: 2
+...

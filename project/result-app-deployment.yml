@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+   name: result-app-deployment
+   labels: 
+      type: result-app
+spec: 
+   replicas: 2
+   selector: 
+      matchLabels: 
+         type: result-app
+   template: 
+      metadata: 
+         name: result-app-pod
+         labels: 
+            type: result-app
+      spec: 
+         containers: 
+            - name: myresultapp
+              image: dockersamples/examplevotingapp_result
+---
+apiVersion: v1
+kind: Service
+metadata: 
+   name: result-app-service
+   labels: 
+      type: result-app
+spec: 
+   type: LoadBalancer
+   selector: 
+      type: result-app
+   ports: 
+     - targetPort: 80
+       port: 80
+...
