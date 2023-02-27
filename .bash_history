@@ -722,3 +722,189 @@ kubectl apply -f nginx-deploy-service.yml
 kubectl get all
 aws ec2 authorize-security-group-ingress --group-id sg-095a141da69690b17 --region ap-southeast-1 --protocol tcp --port 30813 --cidr 0.0.0.0/0
 ls
+git push
+git add .
+cd files
+ls
+git add .
+git commit -m "d"
+git push 
+cd
+cd project
+ls
+git add .
+cd
+git init
+git config --global user.name "ravisree900"
+git config --global user.email "ravichandu900@gmail.com"
+git init
+git add .
+git commit -m "g"
+git push
+git remote add origin https://github.com/ravisree900/kubernates2.git
+git push -u origin master
+eksctl delete cluster Eks --region ap-southeast-1
+exit
+clear
+eksctl create cluster --name Eks    --region ap-southeast-1 --node-type t3.medium --nodes-max 3
+kubectl get nodes
+ls
+cd files
+ls
+clear
+ls
+vim daemonset.yml
+vim tomcat-deploy-service.yml
+vim daemonset.yml
+vim tomcat-deploy-service.yml
+vim daemonset.yml
+kubectl apply -f daemonset.yml
+vim daemonset.yml
+kubectl delete -f daemonset.yml
+kubectl apply -f daemonset.yml
+kubectl delete -f daemonset.yml
+vim daemonset.yml
+kubectl apply -f daemonset.yml
+kubectl get all
+kubectl get pods
+kubectl get pods -o wide
+kubectl get nodes -o wide
+aws ec2 authorize-security-group-ingress --group-id sg-043edcb79dede0005 --region ap-southeast-1 --protocol tcp --port 32687 --cidr 0.0.0.0/0
+kubectl get all
+clear
+ls
+vim mysql-secret1.yml
+kubectl apply -f mysql-secret1.yml
+kubectl get pods
+kubectl delete -f daemonset.yml
+kubectl get pods
+kubectl exec -it mysql-pod -- bash
+vim mysql-secret1.yml
+echo "mvbrothers" | base64
+vim mysql-secret1.yml
+kubectl exec -it mysql-pod -- bash
+chmod 700 mysql-secret1.yml
+ll mysql-secret1.yml
+kubectl exec -it mysql-pod -- bash
+ls
+kubectl delete -f mysql-secret1.yml
+ls
+ll
+ls
+clear
+vim secret2.yml
+vim defination2.yml
+kubectl apply -f secret2.yml
+kubectl apply -f defination2.yml
+kubectl get pods
+kubectl exec -it postgres-pod -- bash
+ls
+vim secret2.yml
+vim defination2.yml
+vim secret2.yml
+vim defination2.yml
+mv defination2.yml postgres-secret.yml
+ls
+rm -rf secret2.yml
+ls
+vim postgres-secret.yml 
+kubectl apply -f postgres-secret.yml 
+vim postgres-secret.yml 
+kubectl delete -f postgres-secret.yml 
+kubectl get pods
+kubectl delete postgres-pod 
+kubectl delete --all pods
+kubectl get pods
+ls
+clear
+ls
+kubectl apply -f postgres-secret.yml
+kubectl get pods
+kubectl exec -it postgres-deployment-76f9d467f-hzngd -- bash
+vim postgres-secret.yml 
+kubectl delete --all pods
+kubectl apply -f postgres-secret.yml
+kubectl delete --all pods
+vim postgres-secret.yml 
+kubectl apply -f postgres-secret.yml
+kubectl delete --all pods
+ls
+vim postgres-secret.yml 
+kubectl apply -f postgres-secret.yml
+kubectl delete --all pods
+vim postgres-secret.yml 
+kubectl apply -f postgres-secret.yml
+kubectl delete --all pods
+kubectl get svc
+kubectl get deployments
+kubectl delete --all deploymnets
+kubectl delete --all deployments
+kubectl delete --all svc
+exit
+eksctl delete cluster Eks --region ap-southeast-1
+exit
+eksctl create cluster --name Eks    --region ap-southeast-1 --node-type t3.medium --nodes-min 3
+kubectl get nodes
+/etc/hostname
+sudo /etc/hostname
+vim /etc/hostnames
+vim /etc/hostname
+kubectl get nodes
+vim /etc/hostname
+init 6
+kubectl get nodes
+ls
+cd files
+ls
+vim requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+vim requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+kubectl delete -f requestandlimits1.yml
+vim requestandlimits1.yml
+kubectl delete --all pods
+kubectl delete --all svc
+kubectl delete -f requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+kubectl get svc
+kubectl get pods
+kubectl get svc
+vim requestandlimits1.yml
+ps -aq | grep requestandlimits1.yml
+ps -aq | grep LoadBalancer
+vim requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+kubectl get pods
+kubectl get pods -o wide
+kubectl delete pod eclipse-mosquitto-pod
+kubectl get pods -o wide
+kubectl delete --all pods
+kubectl delete --all svc
+kubectl delete --all deployments
+kubectl delete --all svc
+vim requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+kubectl get pods
+kubectl get pods -o wide
+kubectl descrribe pod mongo-express-pod | less
+kubectl describe pod mongo-express-pod | less
+kubectl get pods -o wide
+vim requestandlimits1.yml
+kubectl delete --all pods
+kubectl delete --all svc
+vim requestandlimits1.yml
+kubectl apply -f requestandlimits1.yml
+kubectl get pods -o wide
+kubectl get all
+aws ec2 authorize-security-group-ingress --group-id sg-0b754f6c3688cb047 --region ap-southeast-1 --protocol tcp --port 32559 --cidr 0.0.0.0/0
+kubectl get all
+kubectl delete --all pods
+kubectl delete --all svc
+kubectl delete --all deployments
+kubectl delete --all svc
+clear
+ls
+vim requestsandlimits2.yml
+ls
+eksctl delete cluster Eks --region ap-southeast-1
+exit
